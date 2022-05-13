@@ -28,7 +28,7 @@ class Cell:
         cell_str_1 = ['*' * (self.cell_number % self.length)]
         if self.cell_number % self.length != 0:
             return '\n'.join((cell_str + cell_str_1))
-
+        return '\n'.join((cell_str))
 
 cell_1 = Cell(15)
 print(cell_1)
